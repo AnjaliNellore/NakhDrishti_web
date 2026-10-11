@@ -1,0 +1,9 @@
+flask>=3.0
+tensorflow>=2.16
+xgboost>=2.0
+# The SVM + scaler pickles were saved with scikit-learn 1.6.1 - keep this pinned.
+scikit-learn==1.6.1
+numpy
+pandas
+pillow
+joblib

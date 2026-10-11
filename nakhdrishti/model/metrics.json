@@ -1,0 +1,67 @@
+{
+  "test_images": 797,
+  "accuracy": {
+    "xgboost": 88.21,
+    "svm": 90.59,
+    "hybrid": 90.84
+  },
+  "weighted_f1_hybrid": 90.8,
+  "per_class": [
+    {
+      "class": "Acral_Lentiginous_Melanoma",
+      "precision": 86.7,
+      "recall": 92.0,
+      "f1": 89.3,
+      "support": 113
+    },
+    {
+      "class": "Blue_Finger",
+      "precision": 83.9,
+      "recall": 84.8,
+      "f1": 84.3,
+      "support": 92
+    },
+    {
+      "class": "Clubbing",
+      "precision": 89.5,
+      "recall": 79.7,
+      "f1": 84.3,
+      "support": 118
+    },
+    {
+      "class": "Healthy",
+      "precision": 100.0,
+      "recall": 96.9,
+      "f1": 98.4,
+      "support": 98
+    },
+    {
+      "class": "Onychogryphosis",
+      "precision": 90.0,
+      "recall": 95.2,
+      "f1": 92.5,
+      "support": 104
+    },
+    {
+      "class": "Onychomycosis",
+      "precision": 93.6,
+      "recall": 94.4,
+      "f1": 94.0,
+      "support": 108
+    },
+    {
+      "class": "Pitting",
+      "precision": 93.1,
+      "recall": 94.9,
+      "f1": 94.0,
+      "support": 99
+    },
+    {
+      "class": "Psoriasis",
+      "precision": 90.6,
+      "recall": 89.2,
+      "f1": 89.9,
+      "support": 65
+    }
+  ]
+}

@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NakhDrishti | AI Nail Health Screening</title>
+
+    <meta name="description"
+        content="NakhDrishti - AI-powered fingernail health screening for early health assessment.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-hand-dots"></i>
+                </div>
+
+                <div>
+                    <span class="logo-name">Nakh<span>Drishti</span></span>
+                    <small>AI Nail Health Screening</small>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#conditions">Conditions</a>
+                <a href="#model">Model</a>
+                <a href="#about">About</a>
+
+            </nav>
+
+            <a href="#scanner" class="nav-button">
+                Analyze Nail
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="mobile-menu" id="mobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <div class="status-badge">
+                        <span class="pulse"></span>
+                        AI-Powered Nail Screening
+                    </div>
+
+                    <h1>
+                        Your Nails Can Tell
+                        <span>A Story About Your Health.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        NakhDrishti uses artificial intelligence to analyze
+                        fingernail images and provide rapid screening for
+                        eight nail conditions, from healthy nails to
+                        signs that deserve a doctor's attention.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#scanner" class="primary-button">
+                            <i class="fa-solid fa-camera"></i>
+                            Analyze Your Nail
+                        </a>
+
+                        <a href="#how-it-works" class="secondary-button">
+                            How It Works
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <div class="trust-item">
+                            <i class="fa-solid fa-shield-heart"></i>
+                            <span>Non-Invasive</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Fast Analysis</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span>Smartphone Friendly</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO VISUAL -->
+
+                <div class="hero-visual">
+
+                    <div class="glow glow-one"></div>
+                    <div class="glow glow-two"></div>
+
+                    <div class="medical-card">
+
+                        <div class="card-top">
+
+                            <div>
+                                <span class="mini-label">
+                                    AI SCREENING
+                                </span>
+
+                                <h3>
+                                    Nail Health Analysis
+                                </h3>
+                            </div>
+
+                            <div class="ai-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="nail-image">
+
+                            <div class="nail-hand">
+                                <span>☝️</span>
+                            </div>
+
+                            <div class="scan-line"></div>
+
+                            <div class="scan-box">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                Nail region detected
+                            </div>
+
+                        </div>
+
+                        <div class="analysis-status" id="serverStatus">
+
+                            <div class="status-dot" id="statusDot"></div>
+
+                            <div>
+                                <strong id="statusTitle">Connecting to AI model...</strong>
+                                <small id="statusText">Please wait</small>
+                            </div>
+
+                            <i class="fa-solid fa-check-circle" id="statusIcon"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card floating-one">
+
+                        <div class="floating-icon">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+
+                        <div>
+                            <strong>AI Analysis</strong>
+                            <span>Deep Learning</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card floating-two">
+
+                        <div class="accuracy-ring">
+                            <span>AI</span>
+                        </div>
+
+                        <div>
+                            <strong>8 Classes</strong>
+                            <span>Health Screening</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="stats-container">
+
+                <div class="stat">
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <div>
+                        <strong>8</strong>
+                        <span>Nail Conditions</span>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <i class="fa-solid fa-brain"></i>
+
+                    <div>
+                        <strong id="statAccuracy">90.8%</strong>
+                        <span>Hybrid Model Test Accuracy</span>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <i class="fa-solid fa-camera"></i>
+
+                    <div>
+                        <strong>1</strong>
+                        <span>Nail Image Required</span>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <div>
+                        <strong>Non-Invasive</strong>
+                        <span>Screening Approach</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="section" id="how-it-works">
+
+            <div class="section-heading">
+
+                <div class="section-tag">
+                    SIMPLE PROCESS
+                </div>
+
+                <h2>
+                    From Image to
+                    <span>Insight</span>
+                </h2>
+
+                <p>
+                    NakhDrishti is designed to make AI-based nail screening
+                    simple and accessible.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step-card">
+
+                    <div class="step-number">01</div>
+
+                    <div class="step-icon">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+
+                    <h3>Upload Image</h3>
+
+                    <p>
+                        Capture or upload a clear image of your fingernail.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">02</div>
+
+                    <div class="step-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+
+                    <h3>AI Analysis</h3>
+
+                    <p>
+                        A fine-tuned MobileNetV2 reads the image, then SVM
+                        and XGBoost vote together on the result.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">03</div>
+
+                    <div class="step-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+
+                    <h3>Get Result</h3>
+
+                    <p>
+                        Receive an AI-generated screening result with
+                        confidence information.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONDITIONS ================= -->
+
+        <section class="conditions-section" id="conditions">
+
+            <div class="section-heading">
+
+                <div class="section-tag">
+                    AI CLASSIFICATION
+                </div>
+
+                <h2>
+                    Eight Nail
+                    <span>Conditions</span>
+                </h2>
+
+                <p>
+                    NakhDrishti's multiclass model was trained on thousands of
+                    fingernail images across eight categories.
+                </p>
+
+            </div>
+
+
+            <div class="condition-grid">
+
+                <div class="condition-card sev-ok" data-class="Healthy">
+
+                    <div class="condition-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <span class="condition-number">01</span>
+
+                    <h3>Healthy Nail</h3>
+
+                    <p>
+                        Smooth surface and even colour, with none of the seven screened conditions visible.
+                    </p>
+
+                    <div class="condition-footer">
+                        <span>Healthy</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="condition-card sev-moderate" data-class="Pitting">
+
+                    <div class="condition-icon">
+                        <i class="fa-solid fa-circle-dot"></i>
+                    </div>
+
+                    <span class="condition-number">02</span>
+
+                    <h3>Nail Pitting</h3>
+
+                    <p>
+                        Small dents on the nail surface, often associated with psoriasis or eczema.
+                    </p>
+
+                    <div class="condition-footer">
+                        <span>Screening</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="condition-card sev-moderate" data-class="Psoriasis">
+
+                    <div class="condition-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <span class="condition-number">03</span>
+
+                    <h3>Nail Psoriasis</h3>
+
+                    <p>
+                        Pitting, oil-drop patches, thickening or crumbling linked to psoriasis.
+                    </p>
+
+                    <div class="condition-footer">
+                        <span>Screening</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="condition-card sev-moderate" data-class="Onychomycosis">
+
+                    <div class="condition-icon">
+                        <i class="fa-solid fa-virus"></i>
+                    </div>
+
+                    <span class="condition-number">04</span>
+
+                    <h3>Fungal Infection</h3>
+
+                    <p>
+                        Onychomycosis: yellow or white discolouration, thickening and brittle nails.
+                    </p>
+
+                    <div class="condition-footer">
+                        <span>Screening</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="condition-card sev-moderate" data-class="Onychogryphosis">
+
+                    <div class="condition-icon">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+
+                    <span class="condition-number">05</span>
+
+                    <h3>Onychogryphosis</h3>
+
+                    <p>
+                        Thick, overgrown, curved &ldquo;ram's horn&rdquo; nails that are hard to trim.
+                    </p>
+
+                    <div class="condition-footer">
+                        <span>Screening</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="condition-card sev-attention" data-class="Clubbing">
+
+                    <div class="condition-icon">
+                        <i class="fa-solid fa-hand-point-up"></i>
+                    </div>
+
+                    <span class="condition-number">06</span>
+
+                    <h3>Nail Clubbing</h3>
+
+                    <p>
+                        Rounded fingertips and downward-curving nails, linked to long-term heart or lung conditions.
+                    </p>
+
+                    <div class="condition-footer">
+                        <span>See a doctor</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="condition-card sev-attention" data-class="Blue_Finger">
+
+                    <div class="condition-icon">
+                        <i class="fa-solid fa-hand-dots"></i>
+                    </div>
+
+                    <span class="condition-number">07</span>
+
+                    <h3>Blue Finger</h3>
+
+                    <p>
+                        A bluish tint that can signal poor circulation or low oxygen in the fingertips.
+                    </p>
+
+                    <div class="condition-footer">
+                        <span>See a doctor</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="condition-card sev-urgent" data-class="Acral_Lentiginous_Melanoma">
+
+                    <div class="condition-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <span class="condition-number">08</span>
+
+                    <h3>Acral Lentiginous Melanoma</h3>
+
+                    <p>
+                        A rare, serious skin cancer that can appear as a dark streak under or around the nail.
+                    </p>
+
+                    <div class="condition-footer">
+                        <span>Seek care promptly</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SCANNER ================= -->
+
+        <section class="scanner-section" id="scanner">
+
+            <div class="scanner-container">
+
+                <div class="scanner-info">
+
+                    <div class="section-tag">
+                        AI NAIL SCANNER
+                    </div>
+
+                    <h2>
+                        Ready to
+                        <span>Analyze?</span>
+                    </h2>
+
+                    <p>
+                        Upload a clear fingernail image and let NakhDrishti
+                        perform AI-based screening.
+                    </p>
+
+                    <div class="scanner-features">
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            Clear, well-lit image recommended
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            Keep the nail region visible
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            AI result generated after analysis
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="upload-box" id="uploadBox">
+
+                    <input type="file"
+                        id="imageInput"
+                        accept="image/*"
+                        hidden>
+
+                    <div id="uploadContent">
+
+                        <div class="upload-icon">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+
+                        <h3>
+                            Upload Nail Image
+                        </h3>
+
+                        <p>
+                            Drag & drop your image here
+                        </p>
+
+                        <span>
+                            or
+                        </span>
+
+                        <button class="browse-button" id="browseButton">
+                            Browse Image
+                        </button>
+
+                        <small>
+                            JPG, PNG or WEBP &middot; up to 10 MB
+                        </small>
+
+                    </div>
+
+
+                    <div class="preview-container" id="previewContainer">
+
+                        <img id="previewImage" alt="Nail preview">
+
+                        <button id="removeImage" class="remove-image">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                        <div class="file-name" id="fileName"></div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="analyze-button" id="analyzeButton" disabled>
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    Analyze Nail
+
+                </button>
+
+                <div class="scan-error" id="scanError" role="alert" hidden>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span id="scanErrorText"></span>
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div class="result-card" id="resultCard" aria-live="polite">
+
+                    <div class="result-header">
+
+                        <div>
+                            <span>AI SCREENING RESULT</span>
+                            <h3 id="resultTitle">
+                                Healthy Nail
+                            </h3>
+                        </div>
+
+                        <div class="result-check" id="resultIcon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-alert" id="resultAlert" hidden>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span id="resultAlertText"></span>
+                    </div>
+
+
+                    <div class="confidence">
+
+                        <div class="confidence-top">
+                            <span>Confidence</span>
+                            <strong id="confidenceValue">
+                                0%
+                            </strong>
+                        </div>
+
+                        <div class="progress">
+                            <div id="confidenceBar"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-message" id="resultMessage"></div>
+
+
+                    <div class="result-details">
+
+                        <div class="result-block">
+                            <h4>What this condition can look like</h4>
+                            <p id="resultSigns"></p>
+                        </div>
+
+                        <div class="result-block">
+                            <h4>Suggested next steps</h4>
+                            <ul id="resultAdvice"></ul>
+                        </div>
+
+                        <div class="result-doctor" id="resultDoctor"></div>
+
+                    </div>
+
+
+                    <div class="result-block">
+                        <h4>Other possibilities</h4>
+                        <div class="alt-list" id="resultTop"></div>
+                    </div>
+
+
+                    <div class="model-votes" id="modelVotes"></div>
+
+
+                    <button class="new-analysis" id="newAnalysis">
+                        Analyze Another Image
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY NAKHDRISHTI ================= -->
+
+        <section class="section" id="about">
+
+            <div class="about-grid">
+
+                <div class="about-content">
+
+                    <div class="section-tag">
+                        WHY NAKHDRISHTI
+                    </div>
+
+                    <h2>
+                        Making AI-Based
+                        <span>Screening Accessible</span>
+                    </h2>
+
+                    <p>
+                        Traditional nail assessment can require expert
+                        examination and may be time-consuming. NakhDrishti
+                        aims to provide an accessible AI-based screening
+                        approach using fingernail images.
+                    </p>
+
+                    <div class="feature-list">
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <h4>Early Detection Support</h4>
+                                <p>
+                                    Designed to support early health
+                                    assessment.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+
+                            <div>
+                                <h4>AI Classification</h4>
+                                <p>
+                                    Uses deep learning for image-based
+                                    classification.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+
+                            <div>
+                                <h4>Smartphone Friendly</h4>
+                                <p>
+                                    Designed with practical smartphone
+                                    screening in mind.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-visual">
+
+                    <div class="ai-circle">
+
+                        <div class="circle-inner">
+                            <i class="fa-solid fa-brain"></i>
+                            <strong>AI</strong>
+                            <span>SCREENING</span>
+                        </div>
+
+                    </div>
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="mini-data data-one">
+                        <i class="fa-solid fa-image"></i>
+                        Image
+                    </div>
+
+                    <div class="mini-data data-two">
+                        <i class="fa-solid fa-microchip"></i>
+                        CNN
+                    </div>
+
+                    <div class="mini-data data-three">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        Result
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MODEL ================= -->
+
+        <section class="model-section" id="model">
+
+            <div class="section-heading">
+
+                <div class="section-tag">
+                    UNDER THE HOOD
+                </div>
+
+                <h2>
+                    A Hybrid Model,
+                    <span>Tested on Unseen Images</span>
+                </h2>
+
+                <p>
+                    Two classic machine-learning models review the features
+                    learned by a fine-tuned deep network, and a class-aware
+                    ensemble decides when they disagree.
+                </p>
+
+            </div>
+
+
+            <div class="pipeline">
+
+                <div class="pipe-node">
+                    <i class="fa-solid fa-image"></i>
+                    <strong>Nail image</strong>
+                    <span>Resized to 224 &times; 224</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right pipe-arrow"></i>
+
+                <div class="pipe-node">
+                    <i class="fa-solid fa-microchip"></i>
+                    <strong>MobileNetV2</strong>
+                    <span>Fine-tuned &middot; 1,280 features</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right pipe-arrow"></i>
+
+                <div class="pipe-node">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <strong>SVM + XGBoost</strong>
+                    <span>Two independent classifiers</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right pipe-arrow"></i>
+
+                <div class="pipe-node">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <strong>Class-aware ensemble</strong>
+                    <span>Resolves disagreements</span>
+                </div>
+
+            </div>
+
+
+            <div class="metrics-panel" id="metricsPanel" hidden>
+
+                <div class="metrics-col">
+
+                    <h3>Overall accuracy</h3>
+
+                    <div id="accuracyBars"></div>
+
+                    <p class="metrics-note" id="metricsNote"></p>
+
+                </div>
+
+                <div class="metrics-col">
+
+                    <h3>F1 score by condition</h3>
+
+                    <div id="classBars"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DISCLAIMER ================= -->
+
+        <section class="disclaimer">
+
+            <div class="disclaimer-container">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <div>
+
+                    <h3>Important Medical Disclaimer</h3>
+
+                    <p>
+                        NakhDrishti is an AI-based screening and research
+                        project. Its output should not be considered a
+                        medical diagnosis. Please consult a qualified
+                        healthcare professional for clinical evaluation
+                        and treatment decisions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-hand-dots"></i>
+                    </div>
+
+                    <div>
+                        <span class="logo-name">
+                            Nakh<span>Drishti</span>
+                        </span>
+
+                        <small>
+                            AI Nail Health Screening
+                        </small>
+                    </div>
+
+                </div>
+
+                <p>
+                    Vision-based fingernail analysis powered by
+                    artificial intelligence.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Explore</h4>
+
+                <a href="#home">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#conditions">Conditions</a>
+                <a href="#scanner">AI Scanner</a>
+                <a href="#model">Model</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Project</h4>
+
+                <a href="#about">About NakhDrishti</a>
+                <a href="#conditions">AI Classification</a>
+                <a href="#scanner">Screening</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 NakhDrishti. AI-based research project.
+            </span>
+
+            <span>
+                Built with AI + Deep Learning
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
